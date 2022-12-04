@@ -1,60 +1,74 @@
-/* Remove default styling*/
-* {
-    margin: 0;
-    padding: 0;
+ 
+*{
+    margin: 0;  
 }
 
-/* Style header */
-header{
-    display: flex;
+.body{
+    min-width: 600px;
+}
+
+/* Header styling */
+
+.main-title{
     width: 100%;
     height: 10vh;
-    background-color: lightslategray;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Style body */
-article{
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    height: 70vh;
-    background-color: gray;
-    gap: 10px;
-}
-.turn{
-    width: 100%;
-    height: 20vh;
-    align-self: felx-start;
-    background-color: blue;
-    color: white;
+    background-color: #F2EAAA;
+    font-family: 'Courier New', Courier, monospace;
     text-align: center;
+    line-height: 50px;
 }
 
-.player1, .player2{
-    flex: 1;
-    width: 50%;
+/* Section styling */
+
+.turn-msg{
+    text-align: center;
+    width: 100%;
+    font-size: 1em;
+    background-color: #FFFDD0; 
+}
+
+.game-screen{
+    display: flex;
+    max-width: 100%;
     height: 40vh;
-    align-self: flex-end;
-    text-align: center;
-    line-height: 20;
-    background-color: red;
+    justify-content: center;
+    background-color:#FFFDD0;
+
 }
 
-/* Style footer*/
-footer{
+.player, .computer{
+    flex-grow: 0;
+    margin: 10px;
+    width: 200px;
+    height: 20vh;
+    background-color: #EDE285; 
+    border-radius: 25px;
+}
+
+/* Footer styling */
+h4{
+    text-align: center;
+    background-color: 
+}
+
+.choices{
     display: flex;
     width: 100%;
-    height: 20vh;
-    background-color: gainsboro;
+    height: 40vh;
+    background-color: #FFFDD0; 
     justify-content: center;
 }
 
-.replay{
-    align-self: center;
-    width: 30%;
-    height: 10vh;
-    background-color: orange;
-    text-align: center;
+.paper-btn, .scissors-btn, .rock-btn{
+    flex-grow: 0;
+    margin: 10px;
+    width: 200px;
+    height: 20vh;
+    background-color: #EDE285;
+    border-radius: 25px;
+}
+
+
+.retry-btn{
+
 }

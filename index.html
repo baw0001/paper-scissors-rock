@@ -1,25 +1,42 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link href="style.css" rel="stylesheet" >
-    <title>Document</title>
-</head>
-<body>
-    <!--Banner-->
-    <header>
-        <div>Insert game-title here</div>
-    </header>
-    
-    <!--Body-->
-    <article>
-        <div class="turn">TURN MESSAGE</div>
-        <div class="player1">player1</div>
-        <div class="player2">player2</div>
-    </article>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Rock Paper Scissors</title>
+    </head>
+    <body>
 
-    <!--Footer-->
-    <footer>
-        <div class="replay">Play again</div>
-    </footer>
-</body>
+        <header>
+            <div class="main-title">PAPER SCISSORS ROCK</div>
+        </header>
+
+        <h2 class="turn-msg">To start game, press start</h2>
+
+        <div class="section"> 
+            <div class="game-screen">
+                <div class="player">
+                    <div class="player-pick"></div>
+                </div> 
+
+                <div class="computer">
+                    <div class="computer-pick"></div>
+                </div>
+            </div>
+        </div>
+
+        <footer> 
+            <h4>Choose your pick</h4>
+            <div class="choices">
+                <button class="paper-btn"></button>
+                <button class="scissors-btn"></button>
+                <button class="rock-btn"></button>
+            </div>
+            <div class="retry-btn"></div>
+        </footer>
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+    
 </html>
