@@ -4,17 +4,20 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
-        <title>Rock Paper Scissors</title>
+        <script type="text/javascript" src="script.js" defer></script>
+        <title>Paper Scissors Rock</title>
     </head>
+    
     <body>
 
         <header>
-            <div class="main-title">PAPER SCISSORS ROCK</div>
+            <div class="main-title">PAPER SCISSORS ROCK BEST TO THREE</div>
+            <h2 class="turn-msg">To start game, press start</h2>
+
+            <button class="start-btn">START</button>
         </header>
 
-        <h2 class="turn-msg">To start game, press start</h2>
-
-        <div class="section"> 
+        <section>
             <div class="game-screen">
                 <div class="player">
                     <div class="player-pick"></div>
@@ -23,20 +26,25 @@
                 <div class="computer">
                     <div class="computer-pick"></div>
                 </div>
+
+                <div class="score">
+                    <pre class="player-score">Player: 0 || Computer: 0</pre>
+                </div>
             </div>
-        </div>
+        <section>
 
         <footer> 
-            <h4>Choose your pick</h4>
+            
             <div class="choices">
-                <button class="paper-btn"></button>
-                <button class="scissors-btn"></button>
-                <button class="rock-btn"></button>
+                <div class="pick-msg"><p>Choose your pick</p></div>
+                <button class="paper">PAPER</button>
+                <button class="scissors">SCISSORS</button>
+                <button class="rock">ROCK</button>
             </div>
             <div class="retry-btn"></div>
         </footer>
 
-        <script type="text/javascript" src="script.js"></script>
+        
     </body>
     
 </html>

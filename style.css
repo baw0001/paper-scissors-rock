@@ -1,7 +1,9 @@
  
 *{
     margin: 0;  
+    padding: 0;
 }
+
 
 .body{
     min-width: 600px;
@@ -18,7 +20,20 @@
     line-height: 50px;
 }
 
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.start-btn, .reset-btn{
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
 /* Section styling */
+
 
 .turn-msg{
     text-align: center;
@@ -28,12 +43,12 @@
 }
 
 .game-screen{
-    display: flex;
+    display: none;
     max-width: 100%;
     height: 40vh;
     justify-content: center;
     background-color:#FFFDD0;
-
+    flex-wrap: wrap;
 }
 
 .player, .computer{
@@ -45,21 +60,28 @@
     border-radius: 25px;
 }
 
-/* Footer styling */
-h4{
+.score {
+    gap: 50px;
+    width: 100%;
     text-align: center;
-    background-color: 
+}
+.start-menu{
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
+/* Footer styling */
+
 .choices{
-    display: flex;
+    display: none;
     width: 100%;
     height: 40vh;
     background-color: #FFFDD0; 
     justify-content: center;
+    flex-wrap: wrap;
 }
 
-.paper-btn, .scissors-btn, .rock-btn{
+.paper, .scissors, .rock{
     flex-grow: 0;
     margin: 10px;
     width: 200px;
@@ -68,7 +90,12 @@ h4{
     border-radius: 25px;
 }
 
+.pick-msg{
+    text-align: center;
+    width: 100%;
+    
+}
 
 .retry-btn{
-
+    
 }
